@@ -7,20 +7,20 @@ export const metadata: Metadata = {
 
 export default function DataProtectionPage() {
   return (
-    <div className="stack-sm">
+     <div className="stack-sm">
       <h1 className="text-2xl">Datenschutz</h1>
       <p>Hier steht die Datenschutzerklärung.</p>
 
       {/* 1 Verantwortliche Stelle */}
        <div className="stack-sm py-4">
         <h2 className="text-xl"><b>1 Verantwortliche Stelle</b></h2>
-        <p>
+        <p className="break-words whitespace-normal">
             Wir freuen uns über Ihren Besuch auf unserer Website. Zunächst möchten wir uns Ihnen als verantwortliche Stelle im Sinne des Datenschutzrechts vorstellen:
         </p>
         <p>
           Frederik Kohler<br/>Saderlacherweg 1<br/>79761 Waldshut-Tiengen
         </p>
-        <p><a href="mailto:info@frederikkohler.com">info@frederikkohler.de</a></p>
+        <p><a href="mailto:info@frederikkohler.de">info@frederikkohler.de</a></p>
       </div>
 
 
@@ -32,7 +32,7 @@ export default function DataProtectionPage() {
         <p>Jegliche Eingabe von Daten durch Sie auf unserer Website ist freiwillig, es treten durch die Nichtpreisgabe Ihrer Daten für Sie keine Nachteile ein. Ohne bestimmte Daten ist es uns aber nicht möglich, Leistungen zu erbringen oder Verträge zu schließen. Auf derartige Pflichtangaben werden wir Sie jeweils hinweisen.</p>
         <p>Auf dieser Webseite werden personenbezogene Daten des Nutzers nur im Rahmen des geltenden Datenschutzrechts, insbesondere der Datenschutzgrundverordnung (DSGVO), erhoben. Die in dem Text verwendeten Fachbegriffe werden in Art. 4 der DSGVO näher erläutert.</p>
         <p>Eine Datenverarbeitung ist nach der DSGVO insbesondere in drei Fällen erlaubt:</p>
-        <ul className="list-disc">
+        <ul className="list-disc px-5">
           <li>
             nach Art. 6 Abs. 1 lit. a und 7 DSGVO, wenn Sie in die Datenverarbeitung durch uns eingewilligt haben; jeweils werden wir Sie vorher in dieser Datenschutzerklärung und anlässlich der Einwilligung nach Maßgabe von Art. 4 Nr. 11 DSGVO genau unterrichten, wozu und unter welchen Umständen Ihre Daten von uns verarbeitet werden;
           </li>
@@ -60,7 +60,8 @@ export default function DataProtectionPage() {
         <p>Eine Zusammenführung von Nutzungsdaten wird von uns nur vorgenommen, sofern und soweit dies für Abrechnungszwecke erforderlich ist. Ansonsten werden wir Nutzungsdaten nur pseudonym erstellen und nur, soweit Sie dem nicht widersprochen haben. Diesen Widerspruch können Sie jederzeit an die in dem Impressum angegebene Anschrift oder den in dieser Datenschutzerklärung genannten Verantwortlichen senden.</p>
         <p>Rechtsgrundlage für diese Datenverarbeitung sind zum einen unsere berechtigten Interessen gem. Art. 6 Abs. 1 lit. f DSGVO an der Analyse der Website und ihrer Nutzung, gegebenenfalls auch die gesetzliche Erlaubnis zur Speicherung von Daten im Rahmen der Anbahnung eines Vertragsverhältnisses gem. Art. 6 Abs. 1 lit. b DSGVO.</p>
       </div> 
- 
+
+
       {/* 3 Hoster */}
       <div className="stack-sm py-4">
         <h2 className="text-xl"><b>3 Hoster</b></h2>
@@ -68,10 +69,10 @@ export default function DataProtectionPage() {
         <h3 className="text-lg"><b>3.1 Hostinger</b></h3>  
         <p>Unsere Website wird im Internet von einem Dienstleister (Provider oder Hoster) zum Abruf bereitgestellt. Wir nutzen hierfür den Dienst der Hostinger International Ltd., 61 Lordou Vironos Street, 6023 Larnaca, Zypern.</p>
         <p>Wir haben mit unserem Provider einen Auftragsverarbeitungsvertrag abgeschlossen. Danach ist unser Provider verpflichtet, Ihre Daten nur in unserem Auftrag und nach unserer Weisung zu verarbeiten.</p>
-        <p>Weitergehende Informationen zur Datenverarbeitung bei unserem Provider finden Sie in dessen Datenschutzerklärung unter <a target="_blank" rel="noopener noreferrer" href="https://www.hostinger.com/de/legal/datenschutz-bestimmungen">https://www.hostinger.com/de/legal/datenschutz-bestimmungen</a></p>
+        <p>Weitergehende Informationen zur Datenverarbeitung bei unserem Provider finden Sie in dessen <a target="_blank" rel="noopener noreferrer" href="https://www.hostinger.com/de/legal/datenschutz-bestimmungen">Datenschutzerklärung</a>.</p>
         <p>Rechtsgrundlage für diese Datenverarbeitung sind zum einen unsere berechtigten Interessen gem. Art. 6 Abs. 1 lit. f DSGVO an der Bereitstellung und Nutzung unserer Website im Internet sowie – soweit einschlägig – auch die gesetzliche Erlaubnis zur Speicherung von Daten im Rahmen der Anbahnung eines Vertragsverhältnisses gem. Art. 6 Abs. 1 lit. b DSGVO.</p>
         <p>Unser Provider verarbeitet bei jeder Nutzung dieser Website Informationen, die sog. Server Log Dateien, die automatisch bei jedem Aufruf von Websites im Internet von Ihrem Browser übermittelt werden. Dies sind:</p>
-        <ul className="list-disc">
+        <ul className="list-disc px-5">
           <li>Ihre IP-Adresse</li>
           <li>Typ und Version Ihres Browsers</li>
           <li>Hostname</li>
@@ -84,11 +85,13 @@ export default function DataProtectionPage() {
         <p>Diese Daten werden nur für statistische Zwecke verwendet und ermöglichen uns keine Identifikation von Ihnen als Nutzer.</p>
       </div>  
 
+ 
       {/* 4 Werbung */}
       <div className="stack-sm py-4">
         <h2 className="text-xl"><b>4 Werbung</b></h2>
         <p>Vor der Zusendung von Werbung werden wir Sie, soweit es nicht um die Werbung für ähnliche Produkte geht, die Sie bereits erworben haben, um Ihre explizite Einwilligung nach Maßgabe von Art. 4 Nr. 11 DSGVO bitten. Dies erfolgt insbesondere, wenn Sie uns die Einwilligung zur Zusendung unseres Newsletters geben oder ein Kontaktformular ausfüllen. Sie können Ihre Einwilligung nach Maßgabe des nachfolgenden Punktes „Einwilligung“ jederzeit widerrufen. SOWEIT WIR IHRE PERSONENBEZOGENEN DATEN VERWENDEN, UM DIREKTWERBUNG ZU BETREIBEN, KÖNNEN SIE DER VERWENDUNG IHRER DATEN FÜR DIESEN ZWECK EBENFALLS JEDERZEIT WIDERSPRECHEN. DIES KANN ETWA ÜBER JEDE UNSERER KONTAKTMÖGLICHKEITEN, INSBESONDERE FORMLOSE MAIL AN DIE IM IMPRESSUM GENANNTE MAIL ADRESSE ERFOLGEN. WIR WERDEN IHRE DATEN DANN NICHT MEHR FÜR DIREKTWERBUNG VERWENDEN.</p>
       </div> 
+      
 
       {/* 5 Erstkontakt durch elektronische Anfrage */}
       <div className="stack-sm py-4">
@@ -99,7 +102,7 @@ export default function DataProtectionPage() {
         <p>Ihre Daten bleiben grundsätzlich nur so lange gespeichert, wie es der Zweck der jeweiligen Datenverarbeitung erfordert. Eine weitergehende Speicherung kommt vor allem in Betracht, wenn dies zur Rechtsverfolgung oder aus berechtigten Interessen noch erforderlich ist oder eine gesetzliche Pflicht besteht, die Daten noch aufzubewahren (z. B. steuerliche Aufbewahrungsfristen, Verjährungsfrist).</p>
       </div> 
 
-      {/* 6 Einwilligung */}
+       {/* 6 Einwilligung */}
       <div className="stack-sm py-4">
         <h2 className="text-xl"><b>6 Einwilligung</b></h2>
         <p>Soweit wir Sie um Ihre Einwilligung bitten, Ihre Daten zu verarbeiten, werden wir Sie in klarer Sprache und leicht zugänglich darüber informieren, für welche Fälle Sie Ihre Einwilligung erteilen. Jede von uns erbetene Einwilligung ist freiwillig, jeden Vorteil, den Sie durch die Erteilung einer Einwilligung erlangen möchten, können Sie auch ohne die Einwilligung bekommen, fragen Sie uns einfach.</p>
@@ -120,7 +123,7 @@ export default function DataProtectionPage() {
         <h2 className="text-xl"><b>8 Weitergabe der Daten</b></h2>
         <p>Wir mögen Spam genauso wenig wie Sie. Wir werden daher Ihre Daten nicht an Dritte weitergeben, soweit dies nicht gesetzlich erlaubt ist.</p>
         <p>Eine Weitergabe Ihrer Daten kann entweder:</p>
-        <ul className="list-disc">
+        <ul className="list-disc px-5">
           <li>für die Erfüllung eines Vertrages erforderlich und dann nach Art. 6 Abs. 1 lit. b DSGVO erlaubt sein oder</li>
           <li>auf Grundlage unseres berechtigten Interesses an einer effektiven Leistungsgestaltung gem. Art. 6 Abs. 1 lit. f DSGVO erlaubt sein,</li>
           <li>von einer von Ihnen erteilten Einwilligung gedeckt sein oder</li>

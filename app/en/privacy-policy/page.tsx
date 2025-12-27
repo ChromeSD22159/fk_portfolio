@@ -26,8 +26,8 @@ export default function DataProtectionPage() {
           Germany
         </p>
         <p>
-          <a href="mailto:info@frederikkohler.com">
-            info@frederikkohler.com
+          <a href="mailto:info@frederikkohler.de">
+            info@frederikkohler.de
           </a>
         </p>
       </div>
@@ -59,7 +59,7 @@ export default function DataProtectionPage() {
           Article 4 GDPR.
         </p>
         <p>Under the GDPR, data processing is permitted in particular in the following cases:</p>
-        <ul className="list-disc">
+        <ul className="list-disc px-5">
           <li>
             pursuant to Art. 6(1)(a) and Art. 7 GDPR, if you have given your
             consent to the processing of your data;
@@ -120,14 +120,11 @@ export default function DataProtectionPage() {
           instructions.
         </p>
         <p>
-          Further information can be found in Hostinger’s privacy policy:
-          <a
+          Further information can be found in <a
             href="https://www.hostinger.com/de/legal/datenschutz-bestimmungen"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            https://www.hostinger.com/de/legal/datenschutz-bestimmungen
-          </a>
+          >Hostinger’s privacy policy</a>.
         </p>
         <p>
           The legal basis for this processing is Art. 6(1)(f) GDPR and, where
@@ -137,7 +134,7 @@ export default function DataProtectionPage() {
           When accessing our website, the hosting provider processes server log
           files including:
         </p>
-        <ul className="list-disc">
+        <ul className="list-disc px-5">
           <li>Your IP address</li>
           <li>Browser type and version</li>
           <li>Hostname</li>

@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FK Protfoliko Webseite
 
 ## Getting Started
 
@@ -12,31 +12,46 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+``` 
  
-Build Docker:
+### Build Docker image:
 ```bash
 docker build -t fk_web .
 ```
 
-Start Docker:
+### Start container locally:
 ```bash
 docker run -p 3000:3000 fk_web
 ``` 
 
+
+
+## Deployment via Git (Server Pull)
+### 1. Push code to remote repository
 ```bash
-ssh root@69.62.113.185 
+git push origin main
 ```
 
-## Deploymend
-
-### 1. Lokales Image exportieren:
-fk_web % docker save fk_web:latest -o fk_web.tar
 ### 2. Per scp auf den Server kopieren:
-scp fk_web.tar username@69.62.113.185:~/fk_web.tar
-### 3. Auf dem Server importieren:
-docker load -i fk_web.tar
-### 4. Container starten
-docker run -d -p 3000:3000 --name fk_web_app fk_web:latest
+```bash
+ssh root@<serverIp>
+cd ~/fk_web
+```
+
+### 3. Pull latest code
+```bash
+git pull origin main
+```
+
+### 4. Build Docker image
+```bash
+docker build -t fk_web .
+```
+
+### 5. Start/Restart container with restart policy
+```bash
+docker stop fk_web_app        # stop old container
+docker rm fk_web_app          # remove old container
+docker run -d --restart=always -p 3000:3000 --name fk_web_app fk_web:latest
+sudo systemctl reload nginx
+```
