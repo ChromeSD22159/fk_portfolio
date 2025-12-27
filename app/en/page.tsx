@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next"; 
 
+export const metadata: Metadata = {
+  title: "Frederik Kohler | Mobile Engineer",
+  description: "Frederik Kohler | Mobile Engineer",
+};
 
 export default function Home() {
   return (
@@ -35,7 +40,7 @@ export default function Home() {
           </a>
 
           <Link 
-              href="/de/datenschutz"
+              href="/en/privacy-policy"
               rel="noopener noreferrer"
               className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
           >
