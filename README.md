@@ -21,8 +21,22 @@ docker build -t fk_web .
 
 ### Start container locally:
 ```bash
+cd web
 docker run -p 3000:3000 fk_web
+cd ..
 ``` 
+
+### Start Strapi locally:
+```bash
+cd strapi
+npm run develop 
+cd ..
+```
+
+### start local DB:
+```bash
+docker-compose up -d db
+```
 
 
 
@@ -45,13 +59,32 @@ git pull origin main
 
 ### 4. Build Docker image
 ```bash
+cd web
 docker build -t fk_web .
+cd..
 ```
 
-### 5. Start/Restart container with restart policy
+### 5. Start/Restart NextJS container with restart policy
 ```bash
 docker stop fk_web_app        # stop old container
 docker rm fk_web_app          # remove old container
 docker run -d --restart=always -p 3000:3000 --name fk_web_app fk_web:latest
 sudo systemctl reload nginx
+```
+
+## install and start Front/backend
+```bash 
+# ins Strapi-Verzeichnis
+cd strapi 
+# npm installieren & Admin-Panel bauen
+npm install
+npm install pg --save
+npm run build 
+cd .. # zurück ins Hauptverzeichnis
+
+# alte Container stoppen & löschen (optional, aber sicher) 
+docker-compose down 
+# Docker-Container bauen & starten
+docker-compose up --build -d 
+docker logs -f fk_strapi_app
 ```

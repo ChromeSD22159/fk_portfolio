@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "fk_homes",
+  "info": {
+    "singularName": "fk-home",
+    "pluralName": "fk-homes",
+    "displayName": "fk_web_home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
