@@ -19,7 +19,7 @@ services:
     env_file:
       - strapi.env
     environment:
-    NODE_ENV: development
+      NODE_ENV: development
     volumes:
       - strapi-uploads:/app/public/uploads
       - strapi-tmp:/app/.tmp
