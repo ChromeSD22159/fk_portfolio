@@ -21,6 +21,7 @@ export default function Home() {
 
   const [content, setContent] = useState<ApiResponse | null>(null);
 
+  /*
   useEffect(() => {
     fetch("http://localhost:1337/api/fk-home")  // Verwende den richtigen Endpunkt
       .then((res) => res.json())
@@ -33,12 +34,14 @@ export default function Home() {
   if(!content || !content.data) {
     return <div>Loading..</div>
   }
+    { content?.data.title || "No title" }
+  */
 
   return (
 
     <div className="flex flex-col items-start gap-6">
       <h1 className="text-3xl font-semibold tracking-tight">
-        Mobile Engineering { content?.data.title || "No title" }
+        Mobile Engineering 
       </h1> 
 
       <div>

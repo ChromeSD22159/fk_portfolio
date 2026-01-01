@@ -76,10 +76,12 @@ sudo systemctl reload nginx
 ```bash 
 # ins Strapi-Verzeichnis
 cd strapi 
+docker compose exec strapi sh
 # npm installieren & Admin-Panel bauen
 npm install
 npm install pg --save
 npm run build 
+exit
 cd .. # zurück ins Hauptverzeichnis
 
 # alte Container stoppen & löschen (optional, aber sicher) 
