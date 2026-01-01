@@ -4,4 +4,7 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  server: {
+    allowedHosts: ['frederikkohler.de', 'www.frederikkohler.de'],
+  },
 });
