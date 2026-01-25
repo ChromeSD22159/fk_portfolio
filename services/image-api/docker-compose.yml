@@ -7,7 +7,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - images-data:/data/images
+        - ./data/images:/app/data/images
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/8080"]
