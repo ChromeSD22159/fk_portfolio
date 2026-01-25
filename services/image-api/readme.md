@@ -4,7 +4,8 @@
 ssh root@<serverIp>
 cd services/fk_portfolio/services/image-api
 git pull origin main
-
+docker-compose down  
+docker-compose up --build -d 
 docker ps -a
 docker logs fk_image_api
 curl -i http://127.0.0.1:8080/services/upload/health
