@@ -238,6 +238,32 @@ export default function DataProtectionPage() {
           and stored only as long as required.
         </p>
       </div>
+
+      {/* 11 Health Data */}
+      <div className="stack-sm py-4">
+        <h2 className="text-xl"><b>12 Health Data (Mobile App)</b></h2>
+        <p>Our mobile app processes specific health data to provide the user with an overview of their physical activity.</p>
+
+        {/* 12.1 Type and Source of Data */}
+        <h3 className="text-lg"><b>12.1 Type and Source of Data</b></h3>
+        <p>We collect and process exclusively the number of your <b>steps</b>. This data is retrieved via the <b>Google Fit</b> interface (Google APIs). Access only occurs if you have explicitly granted the app permission to do so.</p>
+
+        {/* 12.2 Purpose of Use */}
+        <h3 className="text-lg"><b>12.2 Purpose of Use</b></h3>
+        <p>The data is used to display the step history within the app (display for the current day as well as reviews of the last 8 days and the last 8 weeks). The basis for this processing is your consent according to Art. 6 Para. 1 lit. a GDPR.</p>
+
+        {/* 12.3 Storage and Disclosure */}
+        <h3 className="text-lg"><b>12.3 Storage and Disclosure</b></h3>
+        <p>We do not store this health data in a permanent database and do not transfer it to our own backend or external servers. Processing takes place directly for display in the app on your terminal device. Your steps are not passed on to third parties. We do not use this data for advertising purposes.</p>
+
+        {/* 12.4 Error Analysis (Sentry) */}
+        <h3 className="text-lg"><b>12.4 Error Analysis (Sentry)</b></h3>
+        <p>To improve app stability, we use the service Sentry. In the event of an app crash, a technical error report (crash log) is transmitted to Sentry. This report contains technical device information, but explicitly <b>no</b> health data or information about your steps.</p>
+
+        {/* 12.5 Storage Duration */}
+        <h3 className="text-lg"><b>12.5 Storage Duration</b></h3>
+        <p>Since the data is not permanently stored by us, access ends as soon as the permission is withdrawn in the system settings or the app is uninstalled.</p>
+      </div>
     </div>
   );
 }

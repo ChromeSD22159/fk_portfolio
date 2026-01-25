@@ -61,7 +61,7 @@ git pull origin main
 ```bash
 cd web
 docker build -t fk_web .
-cd..
+cd ..
 ```
 
 ### 5. Start/Restart NextJS container with restart policy

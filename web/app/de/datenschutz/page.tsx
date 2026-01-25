@@ -162,7 +162,8 @@ export default function DataProtectionPage() {
       {/* 11 Dateneingaben */}
       <div className="stack-sm py-4">
         <h2 className="text-xl"><b>11 Dateneingaben</b></h2>
-
+        <p>In unserer mobilen App werden spezifische Gesundheitsdaten verarbeitet, um dem Nutzer eine Übersicht über seine körperliche Aktivität zu ermöglichen.</p>
+   
         {/* 11.1 Verschlüsselung */}
         <h3 className="text-lg"><b>11.1 Verschlüsselung</b></h3>
         <p>Wenn Sie auf unserer Website Daten eingeben, sei es auf einem Kontaktformular, anlässlich einer Registrierung, des Einloggens oder für Zahlungszwecke, ist die Webseite, auf der Sie die Daten eingeben, verschlüsselt. Dadurch können Dritte nicht mitlesen, welche Daten Sie eingeben. Sie erkennen die Verschlüsselung an dem Schlosssymbol in Ihrem Browser und daran, dass die Adresszeile mit „https“ anstatt nur mit „http“ beginnt.</p>
@@ -181,6 +182,32 @@ export default function DataProtectionPage() {
         <p>Grundlage für diese Speicherung ist unser berechtigtes Interesse an Kommunikation mit interessierten Nutzern nach Art. 6 Abs. 1 lit. f DSGVO und bei – auch unentgeltlichen – Verträgen auch die Speicherung von Vertragsdaten gem. Art. 6 Abs. 1 lit. b DSGVO.</p>
         <p>Ihre Daten bleiben gespeichert, solange die Registrierung andauert, insbesondere die Speicherung noch zur Vertragserfüllung-/abwicklung, zur Rechtsverfolgung durch uns oder aus unseren sonstigen berechtigten Interessen noch erforderlich ist oder wir gesetzlich gehalten sind, Ihre Daten noch aufzubewahren (z.B. im Rahmen steuerlicher Aufbewahrungsfristen).</p>
       </div> 
+
+      {/* 12 Erhebung von Gesundheitsdaten */}
+      <div className="stack-sm py-4">
+        <h2 className="text-xl"><b>12 Gesundheitsdaten (Mobile App)</b></h2>
+        <p>In unserer mobilen App werden spezifische Gesundheitsdaten verarbeitet, um dem Nutzer eine Übersicht über seine körperliche Aktivität zu ermöglichen.</p>
+
+        {/* 12.1 Art und Quelle der Daten */}
+        <h3 className="text-lg"><b>12.1 Art und Quelle der Daten</b></h3>
+        <p>Wir erheben und verarbeiten ausschließlich die Anzahl Ihrer <b>Schritte</b>. Diese Daten werden über die Schnittstelle <b>Google Fit</b> (Google APIs) abgerufen. Der Zugriff erfolgt nur, sofern Sie der App explizit die Berechtigung dazu erteilt haben.</p>
+
+        {/* 12.2 Verwendungszweck */}
+        <h3 className="text-lg"><b>12.2 Verwendungszweck</b></h3>
+        <p>Die Daten dienen der Darstellung des Schrittverlaufs innerhalb der App (Anzeige für den aktuellen Tag sowie Rückblicke auf die letzten 8 Tage und die letzten 8 Wochen). Grundlage für diese Verarbeitung ist Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.</p>
+
+        {/* 12.3 Speicherung und Weitergabe */}
+        <h3 className="text-lg"><b>12.3 Speicherung und Weitergabe</b></h3>
+        <p>Wir speichern diese Gesundheitsdaten nicht in einer dauerhaften Datenbank und übertragen sie nicht an ein eigenes Backend oder externe Server. Die Verarbeitung erfolgt direkt zur Anzeige in der App auf Ihrem Endgerät. Eine Weitergabe der Schritte an Dritte findet nicht statt. Wir verwenden diese Daten nicht für Werbezwecke.</p>
+
+        {/* 12.4 Fehleranalyse (Sentry) */}
+        <h3 className="text-lg"><b>12.4 Fehleranalyse (Sentry)</b></h3>
+        <p>Zur Verbesserung der App-Stabilität nutzen wir den Dienst Sentry. Im Falle eines App-Absturzes wird ein technischer Fehlerbericht (Crashlog) an Sentry übermittelt. Dieser Bericht enthält technische Geräteinformationen, jedoch ausdrücklich <b>keine</b> Gesundheitsdaten oder Informationen zu Ihren Schritten.</p>
+
+        {/* 12.5 Speicherdauer */}
+        <h3 className="text-lg"><b>12.5 Speicherdauer</b></h3>
+        <p>Da die Daten nicht dauerhaft von uns gespeichert werden, endet der Zugriff, sobald die Berechtigung in den Systemeinstellungen entzogen oder die App deinstalliert wird.</p>
+      </div>
     </div> 
   );
 }  
