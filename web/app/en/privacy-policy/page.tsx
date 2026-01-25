@@ -264,6 +264,18 @@ export default function DataProtectionPage() {
         <h3 className="text-lg"><b>12.5 Storage Duration</b></h3>
         <p>Since the data is not permanently stored by us, access ends as soon as the permission is withdrawn in the system settings or the app is uninstalled.</p>
       </div>
+
+      {/* 13 Data Retention and Deletion */}
+      <div className="stack-sm py-4" id="loeschung">
+        <h2 className="text-xl"><b>13 Deletion of Account Data</b></h2>
+        <p>Users can request the deletion of their account and all associated data at any time.</p>
+        
+        <h3 className="text-lg"><b>13.1 Deletion via the App</b></h3>
+        <p>Within the app's account settings, a function is available for you to directly delete your profile and your data.</p>
+        
+        <h3 className="text-lg"><b>13.2 Manual Deletion Request</b></h3>
+        <p>Alternatively, you can send a data deletion request by email to <b>info@frederikkohler.de</b>. We will permanently remove your account and all associated data within the statutory periods.</p>
+      </div>
     </div>
   );
 }

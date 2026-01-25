@@ -208,6 +208,18 @@ export default function DataProtectionPage() {
         <h3 className="text-lg"><b>12.5 Speicherdauer</b></h3>
         <p>Da die Daten nicht dauerhaft von uns gespeichert werden, endet der Zugriff, sobald die Berechtigung in den Systemeinstellungen entzogen oder die App deinstalliert wird.</p>
       </div>
+
+      {/* 13 Speicherdauer */}
+      <div className="stack-sm py-4" id="loeschung">
+        <h2 className="text-xl"><b>13 Löschung von Kontodaten</b></h2>
+        <p>Nutzer können die Löschung ihres Kontos und aller damit verbundenen Daten jederzeit anfordern.</p>
+        
+        <h3 className="text-lg"><b>13.1 Löschung über die App</b></h3>
+        <p>Innerhalb der App steht Ihnen in den Kontoeinstellungen eine Funktion zur direkten Löschung Ihres Profils und Ihrer Daten zur Verfügung.</p>
+        
+        <h3 className="text-lg"><b>13.2 Manuelle Löschanfrage</b></h3>
+        <p>Alternativ können Sie eine Anfrage auf Datenlöschung per E-Mail an <b>info@frederikkohler.de</b> senden. Wir werden Ihr Konto und alle zugehörigen Daten innerhalb der gesetzlichen Fristen dauerhaft entfernen.</p>
+      </div>
     </div> 
   );
 }  
