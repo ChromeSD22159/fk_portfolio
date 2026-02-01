@@ -8,6 +8,9 @@ services:
       - "8080:8080"
     volumes:
         - ./data/images:/app/data/images
+    environment:
+      - SUPABASE_PROJECT_REF=${SUPABASE_PROJECT_REF}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/8080"]
